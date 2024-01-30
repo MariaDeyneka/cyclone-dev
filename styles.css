@@ -122,18 +122,41 @@ body {
   display: flex;
   justify-content: end;
 }
+
 .header_text {
   color: white;
   font-size: 25px;
   opacity: 0.5;
+  font-weight: lighter;
 }
-.vector {
+
+.icon_container {
   z-index: 1;
   position: relative;
   width: 30px;
   height: 28px;
-  margin-top: 8px;
+  background: url("images/vector.svg");
+  background-size: cover;
 }
+
+.icon_container:hover {
+  background-image: url("images/vector_hovered.svg");
+  background-size: cover;
+}
+
+.linkedin {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 7px;
+  background: url("images/linkedin.svg");
+  background-size: cover;
+}
+
+.linkedin:hover {
+  background: url("images/linkedin_hovered.svg");
+  background-size: cover;
+}
+
 .logo {
   width: 100%;
   height: 100%;
@@ -142,7 +165,7 @@ body {
   width: 50%;
   height: 100%;
   align-self: center;
-  margin-bottom: 3%;
+  margin-bottom: 7%;
   position: relative;
 }
 
@@ -235,18 +258,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .presentation_button:hover {
   border: 3px solid #e200e2;
   color: #e200e2;
 }
+
+.presentation_button:hover .redirect-icon {
+  background: url("images/redirect-icon_hovered.svg");
+  background-size: cover;
+}
+
 .form_media {
   display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
   position: relative;
+}
+
+.redirect-icon {
+  width: 20px;
+  height: 20px;
+  background: url("images/redirect-icon.svg");
+  background-size: cover;
 }
 
 @media screen and (max-device-width: 1680px) {
@@ -427,7 +464,7 @@ body {
     margin-top: 0;
   }
   .main h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
   .get_ready {
     display: none;
@@ -465,6 +502,17 @@ body {
     width: 46px;
     height: 46px;
   }
+
+  .redirect-icon {
+    display: none;
+  }
+  .presentation_button {
+    width: 330px;
+  }
+  .header_text {
+    font-size: 15px;
+    margin-left: 10px;
+  }
 }
 @media screen and (max-device-width: 400px) {
   .main {
@@ -499,7 +547,7 @@ body {
     width: 130px;
     margin-left: 5px;
   }
-  .vector {
+  .icon_container {
     width: 20px;
     height: 23px;
   }
@@ -514,8 +562,8 @@ body {
     padding: 5px 40px 4px 9px;
   }
   .logo {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
   }
   .span_style {
     font-size: 12px !important;
