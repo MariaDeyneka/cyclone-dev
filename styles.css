@@ -302,6 +302,15 @@ body {
     width: 50%;
   }
 }
+@media screen and (max-device-width: 1750px) and (max-device-height: 800px) {
+  .main {
+    height: 95.5%;
+  }
+  .inner_container {
+    height: 96%;
+  }
+}
+
 @media screen and (max-device-width: 1440px) {
   .main h1 {
     font-size: 42px;
