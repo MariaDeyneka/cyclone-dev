@@ -79,7 +79,7 @@ body {
   height: 92px;
 }
 .span_style {
-  margin-right: 12% !important;
+  margin-right: 10% !important;
 }
 .image_div {
   display: flex;
@@ -88,11 +88,11 @@ body {
 }
 .main {
   height: 82.5%;
-  padding: 35px 80px 35px 192px;
+  padding: 35px 100px 35px 192px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url("images/background.svg"), #000000;
+  background: #000000;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -118,7 +118,7 @@ body {
   margin-bottom: 0;
 }
 .main h1 {
-  color: #e200e2;
+  color: #1FE870;
   text-shadow: 0px -4px 3.9000000953674316px #1d1d1b;
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -192,8 +192,8 @@ body {
 }
 
 .logo {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 #largeImage {
   width: 50%;
@@ -201,6 +201,9 @@ body {
   align-self: center;
   margin-bottom: 7%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .form {
@@ -282,9 +285,9 @@ body {
 }
 
 .presentation_button {
-  border: 3px solid #85f0ee;
+  border: 3px solid #1FE870;
   background: transparent;
-  color: #85f0ee;
+  color: #1FE870;
   font-family: "Atmospheric";
   width: 400px;
   height: 53px;
@@ -591,7 +594,7 @@ body {
 
 @media screen and (max-width: 400px) {
   .main {
-    height: 82.5%;
+    height: 84.5%;
     padding: 10px 20px;
   }
   .main h1 {
